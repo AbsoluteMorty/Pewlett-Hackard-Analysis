@@ -37,8 +37,8 @@ CREATE TABLE salaries (
 );
 
 create table dept_emp (
+  emp_no int not null,
 	dept_no varchar not null,
-	emp_no int not null,
 	from_date date not null,
 	to_date date not null,
 	foreign key (dept_no) references departments (dept_no),
